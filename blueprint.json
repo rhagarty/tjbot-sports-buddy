@@ -1,35 +1,35 @@
 {
-  "repoURL": "https://github.com/rhagarty/global-citizen",
-  "blueprint": {
-    "generators": {
-      "node": [
-        "generator-starterkit-content-downloader",
-        "generator-ibm-cloud-enablement",
-        "generator-ibm-service-enablement",
-        "generator-git-starterkit-credentials-builder"
-      ]
+  "email": "cloud@us.ibm.com",
+  "generatorOptions": {
+    "generator-git-starterkit-credentials-builder": {
+      "scope": "@arf",
+      "version": "0.x.x"
     },
-    "generatorOptions": {
-      "generator-git-starterkit-credentials-builder": {
-        "version": "0.x.x",
-        "scope": "@arf"
+    "generator-ibm-cloud-enablement": {
+      "options": {
+        "port": "3000"
       },
-      "generator-ibm-cloud-enablement": {
-        "version": "1.0.x",
-        "options": {
-          "port": "3000"
-        }
-      },
-      "generator-ibm-service-enablement": {
-        "version": "2.3.x"
-      },
-      "generator-starterkit-content-downloader": {
-        "version": "0.x.x",
-        "scope": "@arf"
-      }
+      "version": "0.8.x"
     },
-    "name": "A Perfect Starter Kit",
-    "description": "It\'s perfect!",
+    "generator-ibm-service-enablement": {
+      "version": "0.6.4"
+    },
+    "generator-starterkit-content-downloader": {
+      "scope": "@arf",
+      "version": "0.x.x"
+    }
+  },
+  "generators": {
+    "node": [
+      "generator-starterkit-content-downloader",
+      "generator-ibm-cloud-enablement",
+      "generator-ibm-service-enablement",
+      "generator-git-starterkit-credentials-builder"
+    ]
+  },
+  "previewURLs": [],
+    "name": "Mikes perfect starter kit",
+    "description": "Its perfect!",
     "appIconURL": "https://developer.ibm.com/recipes/wp-content/uploads/sites/41/2017/03/watson_conversations_icon.png",
     "thumbnailURL": "https://developer.ibm.com/recipes/wp-content/uploads/sites/41/2017/03/watson_conversations_icon.png",
     "requiredCapabilitiesURLs": {
@@ -40,8 +40,8 @@
     ],
     "servicePlans": {
       "discovery": "lite"
-    }
+    },  "tags": [
+    "devex"
   ],
   "type": "WEB"
-}
 }
